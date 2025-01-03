@@ -58,4 +58,4 @@ class Restaurante:
                 print(mensagem_bebida)
     
     def aplicar_desconto():
-        
+        pass
