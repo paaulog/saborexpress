@@ -4,9 +4,11 @@ from modelos.cardapio.prato import Prato
 
 restaurante_praca = Restaurante('praça', 'Gourmet')
 bebida_suco = Bebida('Suco de Melancia', 5.0, 'Grande')
-prato_paozinho = Prato('Paozinho', 5.0, 'O melhor pão de todos')
+prato_paozinho = Prato('Paozinho', 2.0, 'O melhor pão de todos')
 restaurante_praca.adicionar_no_cardapio(bebida_suco)
+bebida_suco.aplicar_desconto()
 restaurante_praca.adicionar_no_cardapio(prato_paozinho)
+prato_paozinho.aplicar_desconto()
 
 def main():
     restaurante_praca.exibir_cardapio
